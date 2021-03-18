@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moja prvá stránka</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<style type="text/css">
+		#hlavny-nadpis {
+			margin-bottom: 30px;
+		}
+		.zvyraznene {
+			background-color: yellow;
+		}
+		p strong {
+			text-decoration: underline;
+		}
+		li.zvyraznene {
+			font-weight: bold;
+			color: pink;
+		}
+		span {
+			background-color: aqua;
+		}
+		body {
+			background-color: black;
+			color: white;
+		}
+		* {
+			margin: 0;
+		}
+		.flex {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+			flex-flow: row;
+			flex-wrap: wrap;
+		}
+
+		.flex > * {
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 500px) {
+			.flex > * {
+				width: auto;
+			}
+			body {
+				font-size: 20px;
+			}
+			#hlavny-nadpis {
+				margin-bottom: 50px;
+			}
+		}
+
+		nav ul {
+			list-style: none;
+		}
+		nav ul > li {
+			width: auto;
+		}
+		nav ul > li > a {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href="form.html">Podstránka</a>
+			</li>
+			<li>
+				<a href="form.html">Iná podstránka</a>
+			</li>
+		</ul>
+	</nav>
+	<h1 id="hlavny-nadpis">Nadpis</h1>
+	<section class="flex">
+		<article>
+			<p><span>Môj</span> &gt; <span class="zvyraznene">text</span><br>
+				v <strong>odseku</strong></p>
+				<div style="totonie!!!">
+					<ul>
+						<li class="zvyraznene">Prvý</li>
+						<li>Druhý</li>
+						<li>Tretí</li>
+					</ul>
+				</div>
+			</article>
+			<table border="1">
+				<tr>
+					<td>Meno</td>
+					<td>Priezvisko</td>
+					<td>Trieda</td>
+				</tr>
+				<tr>
+					<td>Jožko</td>
+					<td>Mrkviočka</td>
+					<td>4.A</td>
+				</tr>
+			</table>
+		</section>
+		<a target="_blank" href="https://www.sited.sk/"><img width="100" src="https://hkpoprad.sk/wp-content/uploads/2020/10/hkpp-partneri-01.png" alt="Webová stránka Sited, s.r.o."></a>
+
+		<form action="https://httpbin.org/post" method="post">
+			<label>Vaše meno<input name="meno" type="text"></label><br>
+			<label>Vaša správa<textarea name="text"></textarea></label><br>
+			<input type="submit" value="Odoslat">
+		</form>
+
+		<section></section>
+		<article></article>
+		<header></header>
+		<footer></footer>
+		<nav></nav>
+		<main></main>
+	</body>
+	</html>
